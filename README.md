@@ -1,13 +1,18 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/58057273-4871-4e38-a21b-efcedcec48b6/deploy-status)](https://app.netlify.com/sites/geeknote/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ca04ea8e-dab0-47e2-9ed3-6d8698d80c17/deploy-status)](https://app.netlify.com/sites/geeknote-academics/deploys)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # GeekNote
-##### Place for all your learning
-We've got all the resources that you'll require to get a dive into any Computer Science related fields.We've a separate blog space for the users where anyone can post their blogs and share their knowledge with other devs as well. Our registered users/bloggers will also get access to our discord channel.
-Give it a try, you will really get benefited 😉😉.
 
+### Place for all your learning
+
+Our Website helps students by providing them appropriate resources presented in an organized manner. We've got all the resources that you'll require to excell in your academics.
+
+Our aim is to guide student's to follow appropriate path with proper study materials and with all the pre-requsite knowledge to avoid all kind of confusion's across which most of the fresher's get stucked .
+
+We would like to thanks all the developers, contributors and page admins for thier constant support making this aim succesful. We would like to give special thanks to Shitiz, Soumyabrata Bairagi and Yash Pandey for thier initiative of blog space from which this project is inspired.You can ping any of the page admin requesting for any resource/section/notes that we missed to include here.
 
 ## Getting started
 
@@ -28,7 +33,7 @@ Give it a try, you will really get benefited 😉😉.
 
 ### Contributing Guilines
 
-For more details kindly go through our [Contributing Guidelines](https://github.com/tusharjain0022/GeekNote/blob/main/CONTRIBUTING.md).
+For more details kindly go through our [Contributing Guidelines](https://github.com/tusharjain0022/GeekNote-academics/blob/main/CONTRIBUTING.md).
 
 ## Contributors ✨
 

@@ -33,6 +33,8 @@ const SubjectCard = (props) => {
                         <a
                           href={learn_list.ref_link}
                           style={{ color: "black" }}
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           {learn_list.title}
                         </a>

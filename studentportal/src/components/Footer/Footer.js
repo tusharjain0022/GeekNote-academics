@@ -78,33 +78,33 @@ function Footer() {
             <div className="Contents">
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/web-development"> First Year CSE</Link>
+                  <Link to="/first-year-cse"> First Year CSE</Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/app-development"> First Year ECE</Link>
+                  <Link to="/first-year-ece"> First Year ECE</Link>
                 </li>
 
                 <li>
-                  <Link to="/machine-learning"> Second Year CSE</Link>
+                  <Link to="/second-year-cse"> Second Year CSE</Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/cloud-computing"> Second Year ECE</Link>
+                  <Link to="/second-year-ece"> Second Year ECE</Link>
                 </li>
                 <li>
-                  <Link to="/ar-vr"> Third Year CSE</Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link to="/3d-modelling"> Third Year ECE</Link>
-                </li>
-                <li>
-                  <Link to="/competitive-programming">Fourth Year CSE</Link>
+                  <Link to="/third-year-cse"> Third Year CSE</Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/robotics"> Fourth Year ECE</Link>
+                  <Link to="/third-year-ece"> Third Year ECE</Link>
+                </li>
+                <li>
+                  <Link to="/fourth-year-cse">Fourth Year CSE</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/fourth-year-ece"> Fourth Year ECE</Link>
                 </li>
               </ul>
             </div>

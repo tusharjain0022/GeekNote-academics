@@ -49,10 +49,10 @@ function About() {
             <span className="highlight"></span> We would like to thanks all the
             developers, contributors and page admins for thier constant support
             making this aim succesful. We would like to give special thanks to
-            Shitiz and Yash Pandey for thier initiative of blog space from which
-            this project is inspired.You can ping any of the page admin
-            requesting for any resource/section/notes that we missed to include
-            here.
+            Shitiz, Soumyabrata Bairagi and Yash Pandey for thier initiative of
+            blog space from which this project is inspired.You can ping any of
+            the page admin requesting for any resource/section/notes that we
+            missed to include here.
           </p>
         </div>
       </div>

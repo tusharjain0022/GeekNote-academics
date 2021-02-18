@@ -23,9 +23,9 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 5. Make a relevant PR title and mention the issue in the description.
 6. Strictly follow the template provided.
 
-## Report bugs using Github's [issues](https://github.com/tusharjain0022/GeekNote/issues)
+## Report bugs using Github's [issues](https://github.com/tusharjain0022/GeekNote-academics/issues)
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/tusharjain0022/GeekNote/issues); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/tusharjain0022/GeekNote-academics/issues); it's that easy!
 
 ### Write bug reports with detail, background, and sample code
 

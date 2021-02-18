@@ -84,14 +84,24 @@ function Navbar_Top() {
               </div>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blog">
+              <a
+                className="nav-link"
+                href="https://geeknote.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 GeekNote dev
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blog">
+              <a
+                className="nav-link"
+                href="https://geeknote-algorithm.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 GeekNote algo
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/#contact">
