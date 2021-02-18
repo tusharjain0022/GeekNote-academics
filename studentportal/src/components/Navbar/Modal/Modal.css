@@ -1,0 +1,118 @@
+.login-signup-modal .backgroundImage {
+  background: url("../../../images/back.png");
+  height: 100%;
+}
+.login-signup-modal .modal-body {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+.login-signup-modal .modal-content {
+  border: 0px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-signup-modal .wi-40 {
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+}
+.login-signup-modal .wi-60 {
+  height: 100%;
+  width: 60%;
+  display: inline-block;
+}
+.login-signup-modal .loginSignupBox {
+  padding: 30px 3.571vw 5px 3.571vw;
+}
+.loginSignupBox .googleButton {
+  color: #0e3854;
+  border-color: aliceblue;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1.071vw;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 22px;
+  height: 45px;
+}
+.loginSignupBox .googleButton:hover {
+  background-color: #0061c9;
+}
+.loginSignupBox .formInput {
+  background: rgba(255, 255, 255, 0.79);
+  border: 2px solid rgba(14, 56, 84, 0.56);
+  box-sizing: border-box;
+  border-radius: 1.071vw;
+  height: 45px;
+}
+.loginSignupBox .formInput:focus {
+  border: 2px solid #0e3854;
+}
+.loginSignupBox .inputLabel {
+  color: #5a5a5a;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.loginSignupBox .loginSignupButton {
+  background: rgba(14, 56, 84, 0.9);
+  border: 1px solid #29ab87;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  height: 45px;
+}
+.loginSignupBox .loginSignupButton:hover {
+  background-color: #0061c9;
+}
+.googleButton img {
+  width: 20px;
+  height: 20px;
+}
+.loginSignupBox .change-state-button {
+  background: white;
+  border: 0px;
+  margin-top: 15px;
+}
+.loginSignupBox .change-state-button:hover {
+  text-decoration: underline;
+}
+.login-signup-modal .introText {
+  font-weight: 500;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+}
+.login-signup-modal .back-button {
+  color: white;
+  text-decoration: underline;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  background-color: transparent;
+  border: 0px;
+}
+.login-signup-modal .back-button:focus {
+  border: 0px;
+  outline: none;
+}
+.loginSignupBox .small-text {
+  font-size: smaller;
+}
+@media (max-width: 992px) {
+  .login-signup-modal .loginSignupBox {
+    margin: 0px 20px 0px 30px;
+  }
+}

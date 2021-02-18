@@ -1,0 +1,58 @@
+.Aboutus .heading {
+  color: #ccd6f6;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.228373702422146vh;
+}
+.Aboutus {
+  position: relative;
+  min-height: 200px;
+  margin-bottom: 40px;
+}
+.line {
+  position: absolute;
+  height: 90%;
+  left: 25.5px;
+  top: 80px;
+  overflow: hidden;
+}
+.line-pic {
+  height: 1000px;
+}
+.hline {
+  position: absolute;
+  left: 240px;
+  top: 20px;
+  max-width: 60vw;
+  overflow: hidden;
+}
+.Aboutus .about-content p {
+  padding: 0px 5.6875vw;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 4.1522491349480966vh;
+  line-height: 5.536332179930795vh;
+  color: #ccd6f6;
+  margin-top: 30px;
+}
+.Aboutus .about-content .highlight {
+  color: #fbbc04;
+}
+@media (max-width: 992px) {
+  .Aboutus .heading {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .Aboutus .about-content p {
+    font-weight: 350;
+    font-size: 2.1522491349480966vh;
+    line-height: 3.536332179930795vh;
+  }
+  .Aboutus .heading {
+    text-align: center;
+    font-size: 5.228373702422146vh;
+  }
+}

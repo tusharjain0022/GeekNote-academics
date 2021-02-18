@@ -1,0 +1,92 @@
+.main-footer {
+  background: #0b0d17;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.main-footer .containerclass {
+  color: white;
+}
+.main-footer .Option {
+  padding: 4px;
+  /* font-family: Verdana; */
+  font-size: 20px;
+  line-height: 30px;
+}
+.main-footer .Contents {
+  padding: 4px;
+  /* font-family: Segoe UI; */
+  font-size: 16px;
+  line-height: 26px;
+}
+.main-footer .list-unstyled {
+  padding: 1px;
+}
+.main-footer .sp {
+  margin: 7px;
+  padding: 1px;
+  /*text-align: left;*/
+}
+.main-footer .sp-contents {
+  text-align: center;
+  background-color: #3c3d45;
+  bottom: 20pt;
+  top: 20pt;
+  left: 200pt;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.main-footer .text {
+  left: 0%;
+  right: 0%;
+  top: 57.45%;
+  bottom: 0%;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+.main-footer .Links {
+  padding: 5px;
+}
+.main-footer .col-12 {
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-footer .forbg {
+  background-color: #3c3d45;
+}
+.main-footer .divider {
+  flex-grow: 1;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom: 1px solid white;
+}
+.baseLine {
+  font-size: 10px;
+  text-align: center;
+}
+.main-footer .spdivider {
+  flex-grow: 1;
+  border-bottom: 1px solid white;
+  margin: 5px;
+}
+.main-footer .form {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.main-footer .spcontents {
+  margin-left: 75px;
+  margin-right: 75px;
+  text-align: center;
+  background-color: #3c3d45;
+  bottom: 20pt;
+  top: 20pt;
+  left: 200pt;
+  border-radius: 8px;
+  overflow: hidden;
+}

@@ -1,0 +1,45 @@
+.feature-section {
+  position: relative;
+}
+.feature-section .heading {
+  color: #ccd6f6;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.228373702422146vh;
+}
+.feature-section .hline {
+  position: absolute;
+  left: 340px;
+  top: 20px;
+  max-width: 55vw;
+  overflow: hidden;
+}
+.line {
+  position: absolute;
+  height: 93%;
+  left: 25.5px;
+  top: 80px;
+  overflow: hidden;
+}
+
+.feature-section .iframe-home {
+  width: 74.803vw;
+  height: 43.307vw;
+  border: 0px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 520px) {
+  .feature-section .iframe-home {
+    width: 90vw;
+    height: 57.3vw;
+    border: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .feature-section .heading {
+    text-align: center;
+  }
+}

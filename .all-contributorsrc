@@ -1,0 +1,81 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "tusharjain0022",
+      "name": "Tushar Jain",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59157988?v=4",
+      "profile": "https://github.com/tusharjain0022",
+      "contributions": [
+        "code",
+        "design",
+        "mentoring"
+      ]
+    },
+    {
+      "login": "Sahil-Gupta582",
+      "name": "Sahil Gupta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56026206?v=4",
+      "profile": "https://github.com/Sahil-Gupta582",
+      "contributions": [
+        "code",
+        "ideas",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "Abhayraj1707",
+      "name": "Abhay Raj",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62218504?v=4",
+      "profile": "https://github.com/Abhayraj1707",
+      "contributions": [
+        "code",
+        "ideas",
+        "mentoring"
+      ]
+    },
+    {
+      "login": "sandesh-08",
+      "name": "sandesh-08",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67503294?v=4",
+      "profile": "https://github.com/sandesh-08",
+      "contributions": [
+        "code",
+        "ideas",
+        "mentoring"
+      ]
+    },
+    {
+      "login": "sourav1kumar",
+      "name": "Sourav Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56984144?v=4",
+      "profile": "https://github.com/sourav1kumar",
+      "contributions": [
+        "code",
+        "ideas",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "ShashankS1ngh",
+      "name": "Shashank Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60497411?v=4",
+      "profile": "https://github.com/ShashankS1ngh",
+      "contributions": [
+        "code",
+        "ideas",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "GeekNote",
+  "projectOwner": "tusharjain0022",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

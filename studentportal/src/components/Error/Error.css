@@ -1,0 +1,35 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: #c6e2ff;
+  font-family: 'Chakra Petch',sans-serif;
+}
+
+.error h1 {
+  font-size: 200px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 30px;
+}
+
+.error p {
+  margin: 40px 0 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 550px) {
+  .error h1 {
+    font-size: 100px;
+    font-weight: 550;
+    letter-spacing: 10px;
+  }
+  .error p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}

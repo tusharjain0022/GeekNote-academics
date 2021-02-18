@@ -1,0 +1,89 @@
+.contactus-section .card {
+  background-color: #293d5afc;
+  color: #fff;
+  font-weight: 400;
+  grid-column-end: span 3;
+  cursor: pointer;
+  border: 0px;
+  max-width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  margin: 30px 2.34375vw;
+}
+.contactus-section {
+  position: relative;
+  margin-top: 40px;
+}
+.contactus-section .heading {
+  color: #ccd6f6;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.028373702422146vh;
+}
+.contactus-section .hline {
+  position: absolute;
+  left: 240px;
+  top: 20px;
+  max-width: 65vw;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .contactus-section .page-admin {
+    float: right;
+  }
+  .contactus-section .developer {
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  .contactus-section .card {
+    margin: 30px auto;
+    width: 83.333vw;
+    height: auto;
+  }
+  .contactus-section .heading {
+    font-size: 5.228373702422146vh;
+  }
+}
+
+.contactus-section .card:hover {
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 3px 20px #a0dcff;
+  -moz-box-shadow: 0px 3px 20px #a0dcff;
+  box-shadow: 0px 3px 20px #a0dcff;
+  border: solid 1.5px #fbbc04;
+}
+
+.contactus-section .button_contact {
+  width: 100%;
+  border-radius: 35px;
+  background: #132743;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2.778vw 1.111vw;
+  color: #fff;
+}
+.contactus-section .button_contact:hover {
+  color: #fff;
+  border: 1px solid #fbbc04;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.45);
+}
+.contactus-section .button_contact:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #fbbc04;
+  transform: translateY(1px);
+}
+.contactus-section h2 {
+  color: #ccd6f6;
+}
+@media (max-width: 992px) {
+  .contactus-section .heading {
+    text-align: center;
+  }
+}
+.box {
+  background-color: #132743;
+  width: 80%;
+  margin: auto;
+  min-height: 200px;
+}

@@ -1,0 +1,77 @@
+.subject_name{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: #F9F9F9;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.resource_heading{
+    display: flex;
+    justify-content: center;
+}
+
+.sub_resource_heading{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid #000000;
+    font-family: Roboto Slab;
+    font-weight: bold;
+}
+
+.inside_card{
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.learn_notes{
+    width: 55%;
+    margin-left: 35px;
+    background-color: #F9F9F9;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+.learn_videos{
+    width: 35%;
+    margin-right: 35px;
+    background-color: #F9F9F9;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+.learn_notes_heading{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 850px){
+    .inside_card{
+        display: inline-block;
+        width: 100%;
+    }
+    .learn_notes{
+        width: 100%;
+        margin-left: 0;
+    }
+    .learn_videos{
+        width: 100%;
+    }
+}
+
+@media(max-width: 650px){
+    .sub_resource_heading{
+        width: 70%;
+    }
+}
+
+@media(max-width: 380px){
+    .sub_resource_heading{
+        width: 100%;
+    }
+}

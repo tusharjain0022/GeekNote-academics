@@ -1,0 +1,52 @@
+.devmodal .modal-content {
+  background-color: #0a192f;
+  /* // border: "solid 1px #64ffda", */
+  box-shadow: 0px 1px 5px #a0dcff;
+}
+.devmodal .header {
+  text-align: center;
+  color: #ccd6f6;
+}
+.devmodal .header .modal-title {
+  margin: 0px;
+  display: inline;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.228373702422146vh;
+}
+.devmodal .header .close {
+  margin: 0px 0px 0px 0px;
+  display: inline;
+  line-height: 1;
+  font-size: 6.228373702422146vh;
+  font-weight: 400;
+  color: #ccd6f6;
+}
+
+.devmodal .dev-images {
+  width: 100%;
+  max-width: 200px;
+  /* // border: "solid 1.5px #64ffda", */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  padding: 3px;
+  /* background-color: #64ffda; */
+  box-shadow: 0px 2px 20px #a0dcff;
+}
+.devmodal .dev-text-box {
+  color: aliceblue;
+  text-align: left;
+}
+@media (max-width: 992px) {
+  .devmodal .dev-text-box {
+    color: aliceblue;
+    text-align: center;
+  }
+}
+@media (max-width: 516px) {
+  .devmodal .header .modal-title {
+    font-weight: 350;
+    font-size: 4.228373702422146vh;
+  }
+}
