@@ -3,8 +3,9 @@
     font-style: normal;
     font-weight: bolder;
     font-size: 30px;
-    background-color: #F9F9F9;
+    background-color: #293C5A;
     box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid white !important;
 }
 
 .resource_heading{
@@ -16,13 +17,13 @@
     width: 35%;
     display: flex;
     justify-content: center;
-    border-bottom: 1.5px solid #000000;
+    border-bottom: 1.5px solid #f0eaea;
     font-family: Roboto Slab;
     font-weight: bold;
 }
 
 .inside_card{
-    background-color: #C4C4C4;
+    background-color:#0D101E;
     display: flex;
     justify-content: space-around;
 }
@@ -30,7 +31,7 @@
 .learn_notes{
     width: 55%;
     margin-left: 35px;
-    background-color: #F9F9F9;
+    background-color: #ECECEC;;
     padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
@@ -39,7 +40,7 @@
 .learn_videos{
     width: 35%;
     margin-right: 35px;
-    background-color: #F9F9F9;
+    background-color: #ECECEC;;
     padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;

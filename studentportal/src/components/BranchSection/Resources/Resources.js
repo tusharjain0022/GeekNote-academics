@@ -11,14 +11,14 @@ import speaker from "./svg_img/speaker.svg";
 const SubjectCard = (props) => {
   return (
     <>
-      <Accordion defaultActiveKey="1">
+      <Accordion defaultActiveKey="1" style={{ "marginTop": "5px" }}>
         <Card>
           <Accordion.Toggle
             as={Card.Header}
             eventKey="0"
             className="subject_name"
           >
-            <div className="ml-5 text-center"> {props.sub_name} </div>
+            <div className="ml-5" style={{ "color": "white" }}> {props.sub_name} </div>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="inside_card">
@@ -70,7 +70,7 @@ const CallMe = (props) => {
   return (
     <>
       {props.subjects.map((sub_prop) => {
-        return <SubjectCard id={sub_prop.id} {...sub_prop} />;
+          return <SubjectCard id={sub_prop.id} {...sub_prop} />;
       })}
     </>
   );
