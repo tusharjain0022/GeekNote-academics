@@ -1,11 +1,16 @@
 .subject_name{
+    display: flex;
+    justify-content: space-between;
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: bolder;
     font-size: 30px;
     background-color: #293C5A;
-    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
-    border: 1px solid white !important;
+    box-shadow: 2px 4px 20px rgba(131, 89, 89, 0.25);
+}
+
+.subject_heading_name{
+    padding-right: 20px;
 }
 
 .resource_heading{
@@ -75,4 +80,5 @@
     .sub_resource_heading{
         width: 100%;
     }
+
 }

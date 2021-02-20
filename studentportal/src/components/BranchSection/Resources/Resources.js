@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Resources.css";
 import { Accordion, Card } from "react-bootstrap";
 import syllabus from "../../../data/syllabus.json";
 import pin from "./svg_img/pin.svg";
 import notes from "./svg_img/notes.svg";
 import speaker from "./svg_img/speaker.svg";
+import down_arrow from "./svg_img/down_arrow.svg";
+import up_arrow from "./svg_img/up_arrow.svg";
 
 // Styling to be done in SubjectCard Component
 
 const SubjectCard = (props) => {
+
+  const [arrow,setArrow]=useState(down_arrow);
+
+  function RotateArrow(){
+    if(arrow===down_arrow) setArrow(up_arrow);
+    else setArrow(down_arrow);
+  }
+
   return (
     <>
       <Accordion defaultActiveKey="1" style={{ "marginTop": "5px" }}>
@@ -17,8 +27,10 @@ const SubjectCard = (props) => {
             as={Card.Header}
             eventKey="0"
             className="subject_name"
+            onClick={RotateArrow}
           >
-            <div className="ml-5" style={{ "color": "white" }}> {props.sub_name} </div>
+            <div className="subject_heading_name" style={{ "color": "white" }}> {props.sub_name} </div>
+            <img src={arrow} alt="down_arrow"/>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="inside_card">
