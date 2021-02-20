@@ -13,6 +13,14 @@
     padding-right: 20px;
 }
 
+.subject_heading_name{
+    margin-left: 20px;
+}
+
+.subject_heading_image{
+    margin-right: 20px;
+}
+
 .resource_heading{
     display: flex;
     justify-content: center;
@@ -80,5 +88,13 @@
     .sub_resource_heading{
         width: 100%;
     }
+}
 
+@media(max-width: 600px){
+    .subject_heading_name{
+        margin-left: -12px;
+    }
+    .subject_heading_image{
+        margin-right: -12px;
+    }
 }

@@ -30,7 +30,7 @@ const SubjectCard = (props) => {
             onClick={RotateArrow}
           >
             <div className="subject_heading_name" style={{ "color": "white" }}> {props.sub_name} </div>
-            <img src={arrow} alt="down_arrow"/>
+            <img className="subject_heading_image" src={arrow} alt="down_arrow"/>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="inside_card">
