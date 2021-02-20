@@ -12,7 +12,7 @@ Our Website helps students by providing them appropriate resources presented in 
 
 Our aim is to guide student's to follow appropriate path with proper study materials and with all the pre-requsite knowledge to avoid all kind of confusion's across which most of the fresher's get stucked .
 
-We would like to thanks all the developers, contributors and page admins for thier constant support making this aim succesful. We would like to give special thanks to Shitiz, Soumyabrata Bairagi and Yash Pandey for thier initiative of blog space from which this project is inspired.You can ping any of the page admin requesting for any resource/section/notes that we missed to include here.
+We would like to thanks all the developers, contributors and page admins for thier constant support making this aim successful. We would like to give special thanks to kshitij tripathi, Soumyabrata Bairagi,Yash Pandey and Kartikey Rohila for thier initiative of blog space from which this project is inspired.You can ping any of the page admin requesting for any resource/section/notes that we missed to include here.
 
 ## Getting started
 
