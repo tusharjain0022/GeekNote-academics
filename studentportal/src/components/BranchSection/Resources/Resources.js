@@ -1,24 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Resources.css";
 import { Accordion, Card } from "react-bootstrap";
 import syllabus from "../../../data/syllabus.json";
 import pin from "./svg_img/pin.svg";
 import notes from "./svg_img/notes.svg";
 import speaker from "./svg_img/speaker.svg";
+import down_arrow from "./svg_img/down_arrow.svg";
+import up_arrow from "./svg_img/up_arrow.svg";
 
 // Styling to be done in SubjectCard Component
 
 const SubjectCard = (props) => {
+
+  const [arrow,setArrow]=useState(down_arrow);
+
+  function RotateArrow(){
+    if(arrow===down_arrow) setArrow(up_arrow);
+    else setArrow(down_arrow);
+  }
+
   return (
     <>
-      <Accordion defaultActiveKey="1">
+      <Accordion defaultActiveKey="1" style={{ "marginTop": "5px" }}>
         <Card>
           <Accordion.Toggle
             as={Card.Header}
             eventKey="0"
             className="subject_name"
+            onClick={RotateArrow}
           >
-            <div className="ml-5 text-center"> {props.sub_name} </div>
+            <div className="subject_heading_name" style={{ "color": "white" }}> {props.sub_name} </div>
+            <img className="subject_heading_image" src={arrow} alt="down_arrow"/>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="inside_card">
@@ -70,7 +82,7 @@ const CallMe = (props) => {
   return (
     <>
       {props.subjects.map((sub_prop) => {
-        return <SubjectCard id={sub_prop.id} {...sub_prop} />;
+          return <SubjectCard id={sub_prop.id} {...sub_prop} />;
       })}
     </>
   );
