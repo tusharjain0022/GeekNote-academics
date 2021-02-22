@@ -16,7 +16,29 @@ function Footer() {
           {/* Column1 */}
           <div className="col-12 col-sm-3">
             <div className="Option">
-              <h4>GeekNote</h4>
+              <h4
+                style={{
+                  fontFamily: "Manrope",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  fontSize: "22px",
+                  color: "#fbbc04",
+                  marginLeft: "10px",
+                }}
+              >
+                GeekNote
+                <span
+                  style={{
+                    color: "white",
+                    display: "inline",
+                    marginLeft: "10px",
+                    fontSize: "12px",
+                    marginTop: "-6px",
+                  }}
+                >
+                  academics
+                </span>
+              </h4>
             </div>
             <div className="Contents">
               <ul className="d-none d-sm-block list-unstyled">
@@ -141,15 +163,15 @@ function Footer() {
               <h5>Want to Contribute?</h5>
             </div>
             <div className="d-none d-sm-block sp-contents">
-              <div className="text">
-                <a href="https://github.com/tusharjain0022/GeekNote">
+              <div className="text" style={{ fontSize: "13px" }}>
+                <a href="https://github.com/tusharjain0022/GeekNote-academics">
                   github.com/tusharjain0022/GeekNote
                 </a>
               </div>
             </div>
             <div className="d-block d-sm-none spcontents">
-              <div className="text">
-                <a href="https://github.com/tusharjain0022/GeekNote">
+              <div className="text" style={{ fontSize: "13px" }}>
+                <a href="https://github.com/tusharjain0022/GeekNote-academics">
                   github.com/tusharjain0022/GeekNote
                 </a>
               </div>

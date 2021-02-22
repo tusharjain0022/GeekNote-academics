@@ -25,7 +25,7 @@ function Navbar_Top() {
 
   return (
     <div className="Navbar">
-      <nav className="navbar navbar-expand-md fixed-top">
+      <nav className="navbar navbar-expand-lg fixed-top">
         <Link className="navbar-brand" to="/">
           GeekNote
           <span
@@ -52,7 +52,7 @@ function Navbar_Top() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li className="nav-item active">
+            <li className="nav-item">
               <Link className="nav-link" to="/#about">
                 About
               </Link>
@@ -71,7 +71,7 @@ function Navbar_Top() {
                 Resources
               </Link>
               <div
-                className="dropdown-menu"
+                className="dropdown-menu text-center"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 {branches.map((obj) => {
@@ -104,8 +104,8 @@ function Navbar_Top() {
               </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/#contact">
-                Contact us
+              <Link className="nav-link" to="/#team">
+                Our Team
               </Link>
             </li>
           </ul>

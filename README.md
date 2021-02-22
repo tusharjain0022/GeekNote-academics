@@ -18,7 +18,7 @@ We would like to thanks all the developers, contributors and page admins for thi
 
 - Fork the repository.
 - Clone it to your machine.
-- Open your terminal/cmd in the `GeekNote/studentportal` folder.
+- Open your terminal/cmd in the `GeekNote-academics/studentportal` folder.
 - Run `npm install` there.
 - Wait for sometime it may take little bit of time.
 - After completion run `npm start` to start the development server.

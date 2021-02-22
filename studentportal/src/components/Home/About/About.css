@@ -3,7 +3,7 @@
   text-align: left;
   font-style: normal;
   font-weight: 400;
-  font-size: 6.228373702422146vh;
+  font-size: 6vh;
 }
 .Aboutus {
   position: relative;
@@ -13,7 +13,7 @@
 .line {
   position: absolute;
   height: 90%;
-  left: 25.5px;
+  left: 4vh;
   top: 80px;
   overflow: hidden;
 }
@@ -22,9 +22,9 @@
 }
 .hline {
   position: absolute;
-  left: 240px;
-  top: 20px;
-  max-width: 60vw;
+  left: 37vh;
+  top: 10px;
+  max-width: 55vw;
   overflow: hidden;
 }
 .Aboutus .about-content p {
@@ -32,8 +32,8 @@
   text-align: justify;
   font-style: normal;
   font-weight: 350;
-  font-size: 4.1522491349480966vh;
-  line-height: 5.536332179930795vh;
+  font-size: 1.8vw;
+  /* line-height: 5.536332179930795vh; */
   color: #ccd6f6;
   margin-top: 30px;
 }

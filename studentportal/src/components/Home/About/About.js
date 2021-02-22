@@ -21,8 +21,8 @@ function About() {
               src={info}
               alt="logo"
               style={{
-                width: "5.2vh",
-                height: "5.2vh",
+                width: "5vh",
+                height: "5vh",
                 margin: "5px 5px",
               }}
             ></img>{" "}

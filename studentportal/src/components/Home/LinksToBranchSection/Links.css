@@ -6,7 +6,7 @@
   text-align: left;
   font-style: normal;
   font-weight: 400;
-  font-size: 6.228373702422146vh;
+  font-size: 6vh;
 }
 .resource-section a {
   text-decoration: none;
@@ -31,9 +31,9 @@
 
 .resource-section .hline {
   position: absolute;
-  left: 240px;
-  top: 20px;
-  max-width: 60vw;
+  left: 43vh;
+  top: 10px;
+  max-width: 50vw;
   overflow: hidden;
 }
 .allcards {

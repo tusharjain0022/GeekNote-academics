@@ -30,8 +30,8 @@ function Links() {
               src={attachment}
               alt="logo"
               style={{
-                width: "5.228373702422146vh",
-                height: "5.228373702422146vh",
+                width: "5vh",
+                height: "5vh",
                 margin: "5px 5px",
               }}
             />{" "}

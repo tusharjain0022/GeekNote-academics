@@ -8,7 +8,7 @@ import PageAdminModal from "./PageAdmin/PageAdmin.js";
 
 function Contact() {
   return (
-    <div className="contactus-section container mb-5" id="contact">
+    <div className="contactus-section container mb-5" id="team">
       <div className="row">
         <div className="hline d-none d-lg-block">
           <img src={hline} alt="hline" className="hline-pic"></img>
@@ -24,7 +24,7 @@ function Contact() {
                 margin: "5px 5px",
               }}
             />{" "}
-            Contact us
+            Our Team
           </h1>
           <hr
             className="d-lg-none"
@@ -36,9 +36,7 @@ function Contact() {
             <Card.Body className="container card_contact">
               <div className="container">
                 <Card.Title className="text-center ">
-                  <h3>
-                    Contact Page <br></br>Admins
-                  </h3>
+                  <h3>Page Admins</h3>
                 </Card.Title>
                 <hr style={{ borderTop: "1px solid white" }} />
                 <Card.Text className="mt-4">
@@ -66,7 +64,7 @@ function Contact() {
             <Card.Body className="container card_contact">
               <div className="container">
                 <Card.Title className="text-center ">
-                  <h3>Contact Page Developers</h3>
+                  <h3> Page Developers</h3>
                 </Card.Title>
                 <hr style={{ borderTop: "1px solid white" }} />
                 <Card.Text className="mt-4">

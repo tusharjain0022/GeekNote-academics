@@ -11,17 +11,16 @@ import up_arrow from "./svg_img/up_arrow.svg";
 // Styling to be done in SubjectCard Component
 
 const SubjectCard = (props) => {
+  const [arrow, setArrow] = useState(down_arrow);
 
-  const [arrow,setArrow]=useState(down_arrow);
-
-  function RotateArrow(){
-    if(arrow===down_arrow) setArrow(up_arrow);
+  function RotateArrow() {
+    if (arrow === down_arrow) setArrow(up_arrow);
     else setArrow(down_arrow);
   }
 
   return (
     <>
-      <Accordion defaultActiveKey="1" style={{ "marginTop": "5px" }}>
+      <Accordion defaultActiveKey="1" style={{ marginTop: "5px" }}>
         <Card>
           <Accordion.Toggle
             as={Card.Header}
@@ -29,8 +28,15 @@ const SubjectCard = (props) => {
             className="subject_name"
             onClick={RotateArrow}
           >
-            <div className="subject_heading_name" style={{ "color": "white" }}> {props.sub_name} </div>
-            <img className="subject_heading_image" src={arrow} alt="down_arrow"/>
+            <div className="subject_heading_name" style={{ color: "white" }}>
+              {" "}
+              {props.sub_name}{" "}
+            </div>
+            <img
+              className="subject_heading_image"
+              src={arrow}
+              alt="down_arrow"
+            />
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="inside_card">
@@ -82,7 +88,7 @@ const CallMe = (props) => {
   return (
     <>
       {props.subjects.map((sub_prop) => {
-          return <SubjectCard id={sub_prop.id} {...sub_prop} />;
+        return <SubjectCard id={sub_prop.id} {...sub_prop} />;
       })}
     </>
   );
