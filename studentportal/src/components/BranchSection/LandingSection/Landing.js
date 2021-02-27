@@ -11,14 +11,13 @@ function Landing(props) {
             <h1
               
             >
-              {props.name} Section
+              {props.branch.shortName} {props.year.name} {props.semester.semester} Semester Section
             </h1>
-            <p>{props.intro}</p>
           </div>
         
       </div>
 
-      <Resources name={props.name} />
+      <Resources branchName={props.branch.shortName} year={props.year.id} semesterName={props.semester.semester} />
     </>
   );
 }

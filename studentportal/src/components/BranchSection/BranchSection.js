@@ -1,16 +1,14 @@
 import "./BranchSection.css";
 import Landing from "./LandingSection/Landing";
-// import LinkedBlog from "./LinkedBlog/LinkedBlog";
 import Calendar from "./Calendar/Calendar";
 import Contributor from "./Contributor/Contributor";
 
 function BranchSection(props) {
   return (
     <div className="branchsection">
-      <Landing name={props.name} intro={props.intro} />
-      {/* <LinkedBlog name={props.name} /> */}
-      <Calendar />
-      <Contributor name={props.name} />
+      <Landing branch={props.branch} year={props.year} semester={props.semester} />
+      <Calendar branch={props.branch} year={props.year} semester={props.semester}/>
+      <Contributor branch={props.branch.shortName} year={props.year.id} semester={props.semester} />
     </div>
   );
 }

@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "name" : "First Year",
+        "link": "/1"
+    },
+    {
+        "id" : 2,
+        "name" : "Second Year",
+        "link": "/2"
+    },
+    {
+        "id" : 3,
+        "name" : "Third Year",
+        "link": "/3"
+    },
+    {
+        "id" : 4,
+        "name" : "Fourth Year",
+        "link": "/4"
+    }
+]

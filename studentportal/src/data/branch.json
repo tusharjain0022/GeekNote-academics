@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Computer Science and Engineering (CSE)",
+        "shortName": "CSE",
+        "link": "/cse"
+    },
+    {
+        "id": 2,
+        "name": "Electronics and Communications Engineering (CSE)",
+        "shortName": "ECE",
+        "link": "/ece"
+    }
+]
