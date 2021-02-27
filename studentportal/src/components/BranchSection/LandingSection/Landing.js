@@ -6,20 +6,18 @@ function Landing(props) {
   return (
     <>
       <div className="landing-section">
-        
-          <div className="text_land">
-            <h1
-              
-            >
-              {props.branch.shortName} {props.year.name} {props.semester.semester} Semester Section
-            </h1>
-          </div>
-        
+        <div className="text_land">
+          <h1>{props.name} Semester Section</h1>
+          <p>{props.intro}</p>
+        </div>
       </div>
 
-      <Resources branchName={props.branch.shortName} year={props.year.id} semesterName={props.semester.semester} />
+      <Resources
+        semesterID={props.semesterID}
+        name={props.name}
+        branch={props.branch}
+      />
     </>
   );
 }
 export default Landing;
-

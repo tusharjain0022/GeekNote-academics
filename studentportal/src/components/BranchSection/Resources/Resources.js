@@ -96,6 +96,7 @@ const CallMe = (props) => {
 };
 
 function Resources(props_name) {
+  console.log(props_name.semesterID);
   return (
     <>
       <div className="resource_heading ">
@@ -104,13 +105,15 @@ function Resources(props_name) {
           <div className="ml-3 text-white">Resources</div>
         </h1>
       </div>
-      {((props_name.branchName === "CSE")?(CSEsyllabus):(ECEsyllabus)).map((props) => {
-        if (props.year === props_name.year && props_name.semesterName === props.semester) {
-          return <CallMe key={props.id} {...props} />;
-        } else {
-          return null;
+      {(props_name.branch === "CSE" ? CSEsyllabus : ECEsyllabus).map(
+        (props) => {
+          if (props.id === props_name.semesterID) {
+            return <CallMe key={props.id} {...props} />;
+          } else {
+            return null;
+          }
         }
-      })}
+      )}
     </>
   );
 }

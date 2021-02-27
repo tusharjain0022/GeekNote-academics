@@ -58,7 +58,9 @@ a:hover {
   text-align: center;
 }
 .main-footer .forbg {
+  height: 28px;
   background-color: #3c3d45;
+  border-radius: 20px;
 }
 .main-footer .divider {
   flex-grow: 1;

@@ -6,10 +6,6 @@ import linkedin from "../../../images/LinkedIn_logo.svg";
 import dev_adm_contri from "../../../data/dev_adm_contri.json";
 
 function Contributor(props) {
-  const selector = {
-    "branch": (String)(props.branch),
-    "year": (Number)(props.year)
-  };
   return (
     <>
       <div className="outer_div">
@@ -22,7 +18,7 @@ function Contributor(props) {
 
         {/* Contributor's Detail to be add here   */}
         {dev_adm_contri.map((contributor_info, idx) => {
-          if (contributor_info.contributor_at.includes(selector)) {
+          if (contributor_info.contributor_at.includes(props.name)) {
             return (
               <div className="right_div">
                 <div className="right_div_in">

@@ -6,9 +6,14 @@ import Contributor from "./Contributor/Contributor";
 function BranchSection(props) {
   return (
     <div className="branchsection">
-      <Landing branch={props.branch} year={props.year} semester={props.semester} />
-      <Calendar branch={props.branch} year={props.year} semester={props.semester}/>
-      <Contributor branch={props.branch.shortName} year={props.year.id} semester={props.semester} />
+      <Landing
+        semesterID={props.semesterID}
+        name={props.name}
+        branch={props.branch}
+        intro={props.intro}
+      />
+      <Calendar timetable={props.timetable} />
+      <Contributor name={props.shortName} />
     </div>
   );
 }

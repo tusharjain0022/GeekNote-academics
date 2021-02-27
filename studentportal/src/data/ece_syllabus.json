@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "ECE0101",
         "name": "ECE First Year Autumn Semester",
         "year": 1,
         "semester": "Autumn",
@@ -200,7 +200,7 @@
                     ]
     },
     {
-        "id": 2,
+        "id": "ECE0102",
         "name": "ECE First Year Spring Semester",
         "year": 1,
         "semester": "Spring",
@@ -400,7 +400,7 @@
                     ]
     },
     {
-        "id": 3,
+        "id": "ECE0203",
         "name": "ECE Second Year Autumn Semester",
         "year": 2,
         "semester": "Autumn",
@@ -600,7 +600,7 @@
                     ]
     },
     {
-        "id": 4,
+        "id": "ECE0204",
         "name": "ECE Second Year Spring Semester",
         "year": 2,
         "semester": "Spring",
@@ -846,7 +846,7 @@
                     ]
     },
     {
-        "id": 5,
+        "id": "ECE0305",
         "name": "ECE Third Year Autumn Semester",
         "year": 3,
         "semester": "Autumn",
@@ -1046,7 +1046,7 @@
                     ]
     },
     {
-        "id": 6,
+        "id":"ECE0306",
         "name": "ECE Third Year Spring Semester",
         "year": 3,
         "semester": "Spring",
@@ -1156,7 +1156,7 @@
                     ]
     },
     {
-        "id": 7,
+        "id": "ECE0407",
         "name": "ECE Fourth Year Autumn Semester",
         "year": 4,
         "semester": "Autumn",
@@ -1356,7 +1356,7 @@
                     ]
     },
     {
-        "id": 8,
+        "id":"ECE0408",
         "name": "ECE Fourth Year Spring Semester",
         "year": 4,
         "semester": "Spring",

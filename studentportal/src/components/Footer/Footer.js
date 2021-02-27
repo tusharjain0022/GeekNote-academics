@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="main-footer">
+    <div className="main-footer pb-sm-4">
       <div className="container containerclass">
         <div className="row">
           {/* Column1 */}
@@ -76,17 +76,10 @@ function Footer() {
                   <Link to="/#about">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/#contact">Contact</Link>
+                  <Link to="/#resources">Resources</Link>
                 </li>
                 <li>
-                  <Link to="/blog">GeekNote dev</Link>
-                </li>
-                <li>
-                  <Link to="/blog">GeekNote algo</Link>
-                </li>
-
-                <li>
-                  <Link to="/">Terms and Policy</Link>
+                  <Link to="/#team">Our Team</Link>
                 </li>
               </ul>
             </div>
@@ -95,16 +88,21 @@ function Footer() {
           {/*Column3*/}
           <div className="col-12 col-sm-3">
             <div className="Option">
-              <h5>Resourcse Links</h5>
+              <h5>Other Links</h5>
             </div>
             <div className="Contents">
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/cse"> CSE</Link>
+                  <a href="https://geeknote.netlify.app/">GeekNote dev</a>
                 </li>
                 <li>
-                  {" "}
-                  <Link to="/ece"> ECE</Link>
+                  <a href="https://geeknote-algorithm.netlify.app/">
+                    GeekNote algo
+                  </a>
+                </li>
+
+                <li>
+                  <Link to="/">Terms and Policy</Link>
                 </li>
               </ul>
             </div>
@@ -141,9 +139,16 @@ function Footer() {
               <h5>Want to Contribute?</h5>
             </div>
             <div className="d-none d-sm-block sp-contents">
-              <div className="text" style={{ fontSize: "13px" }}>
+              <div
+                className="text"
+                style={{
+                  fontSize: "14px",
+                  height: "28px",
+                  borderRadius: "20px",
+                }}
+              >
                 <a href="https://github.com/tusharjain0022/GeekNote-academics">
-                  github.com/tusharjain0022/GeekNote
+                  github.com/GeekNote-academics
                 </a>
               </div>
             </div>

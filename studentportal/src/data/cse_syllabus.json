@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "CSE0101",
         "name": "CSE First Year Autumn Semester",
         "year": 1,
         "semester": "Autumn",
@@ -200,7 +200,7 @@
                     ]
     },
     {
-        "id": 2,
+        "id": "CSE0102",
         "name": "CSE First Year Spring Semester",
         "year": 1,
         "semester": "Spring",
@@ -400,7 +400,7 @@
                     ]
     },
     {
-        "id": 3,
+        "id": "CSE0203",
         "name": "CSE Second Year Autumn Semester",
         "year": 2,
         "semester": "Autumn",
@@ -600,7 +600,7 @@
                     ]
     },
     {
-        "id": 4,
+        "id": "CSE0204",
         "name": "CSE Second Year Spring Semester",
         "year": 2,
         "semester": "Spring",
@@ -846,7 +846,7 @@
                     ]
     },
     {
-        "id": 5,
+        "id": "CSE0305",
         "name": "CSE Third Year Autumn Semester",
         "year": 3,
         "semester": "Autumn",
@@ -1046,7 +1046,7 @@
                     ]
     },
     {
-        "id": 6,
+        "id": "CSE0306",
         "name": "CSE Third Year Spring Semester",
         "year": 3,
         "semester": "Spring",
@@ -1156,7 +1156,7 @@
                     ]
     },
     {
-        "id": 7,
+        "id": "CSE0407",
         "name": "CSE Fourth Year Autumn Semester",
         "year": 4,
         "semester": "Autumn",
@@ -1356,7 +1356,7 @@
                     ]
     },
     {
-        "id": 8,
+        "id": "CSE0408",
         "name": "CSE Fourth Year Spring Semester",
         "year": 4,
         "semester": "Spring",
