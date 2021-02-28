@@ -70,10 +70,19 @@
         "ideas",
         "maintenance"
       ]
+    },
+    {
+      "login": "EmperorYP7",
+      "name": "Yash Pandey (YP)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62606998?v=4",
+      "profile": "http://emperoryp.live",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "GeekNote",
+  "projectName": "GeekNote-academics",
   "projectOwner": "tusharjain0022",
   "repoType": "github",
   "repoHost": "https://github.com",
