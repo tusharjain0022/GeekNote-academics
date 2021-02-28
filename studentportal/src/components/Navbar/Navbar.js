@@ -2,7 +2,6 @@ import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import branches from "../../data/branches.json";
 import ModalBox from "./Modal/Modal";
 
 function Navbar_Top() {
@@ -52,37 +51,22 @@ function Navbar_Top() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li className="nav-item">
+            <li className="nav-item dropdown">
               <Link className="nav-link" to="/#about">
                 About
               </Link>
             </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="/"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                disabled
-              >
+            <li className="nav-item">
+              <Link className="nav-link" to="/#resources">
                 Resources
               </Link>
-              <div
-                className="dropdown-menu text-center"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                {branches.map((obj) => {
-                  return (
-                    <Link className="dropdown-item" to={obj.link}>
-                      {obj.name}
-                    </Link>
-                  );
-                })}
-              </div>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/#team">
+                Our Team
+              </Link>
+            </li>
+
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -102,11 +86,6 @@ function Navbar_Top() {
               >
                 GeekNote algo
               </a>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/#team">
-                Our Team
-              </Link>
             </li>
           </ul>
           <div className=" button-group">

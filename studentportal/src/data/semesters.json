@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "semester": "Autumn",
+        "link": "/autumn"
+    },
+    {
+        "id": 2,
+        "semester": "Spring",
+        "link": "/spring"
+    }
+]

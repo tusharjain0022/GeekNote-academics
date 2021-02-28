@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./Resources.css";
 import { Accordion, Card } from "react-bootstrap";
-import syllabus from "../../../data/syllabus.json";
 import pin from "./svg_img/pin.svg";
 import notes from "./svg_img/notes.svg";
+import CSEsyllabus from "../../../data/cse_syllabus.json";
+import ECEsyllabus from "../../../data/ece_syllabus.json";
 import speaker from "./svg_img/speaker.svg";
 import down_arrow from "./svg_img/down_arrow.svg";
 import up_arrow from "./svg_img/up_arrow.svg";
@@ -95,6 +96,7 @@ const CallMe = (props) => {
 };
 
 function Resources(props_name) {
+  console.log(props_name.semesterID);
   return (
     <>
       <div className="resource_heading ">
@@ -103,13 +105,15 @@ function Resources(props_name) {
           <div className="ml-3 text-white">Resources</div>
         </h1>
       </div>
-      {syllabus.map((props) => {
-        if (props.name === props_name.name) {
-          return <CallMe key={props.id} {...props} />;
-        } else {
-          return null;
+      {(props_name.branch === "CSE" ? CSEsyllabus : ECEsyllabus).map(
+        (props) => {
+          if (props.id === props_name.semesterID) {
+            return <CallMe key={props.id} {...props} />;
+          } else {
+            return null;
+          }
         }
-      })}
+      )}
     </>
   );
 }

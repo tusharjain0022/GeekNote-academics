@@ -5,9 +5,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Error from "./components/Error/Error";
-import BranchSection from "./components/BranchSection/BranchSection";
 import Documentation from "./components/Documentation/Documentation";
 import branches from "./data/branches.json";
+import BranchSection from "./components/BranchSection/BranchSection";
 
 function App() {
   return (
@@ -18,16 +18,26 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             {branches.map((obj) => {
-              return (
-                <Route
-                  exact
-                  path={obj.link}
-                  component={() => (
-                    <BranchSection name={obj.name} intro={obj.intro} />
-                  )}
-                />
-              );
+              return obj.semester.map((sem) => {
+                return (
+                  <Route
+                    exact
+                    path={`${sem.link}`}
+                    component={() => (
+                      <BranchSection
+                        semesterID={sem.id}
+                        name={sem.name}
+                        branch={obj.branch}
+                        shortName={obj.name}
+                        intro={sem.intro}
+                        timetable={sem.timetable}
+                      />
+                    )}
+                  />
+                );
+              });
             })}
+
             <Route
               exact
               path="/terms-and-policy"

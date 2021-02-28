@@ -1,7 +1,209 @@
 [
     {
-        "id": 1,
-        "name": "First Year CSE",
+        "id": "CSE0101",
+        "name": "CSE First Year Autumn Semester",
+        "year": 1,
+        "semester": "Autumn",
+        "subjects": [
+                        {
+                            "id": 1,
+                            "sub_name": "Basics",
+                            "learning_notes":[
+                                                {
+                                                    "id":1,
+                                                    "title":"calculus",
+                                                    "ref_link": "dummylink"
+                                                },
+                                                {
+                                                    "id":2,
+                                                    "title":"co-ordinate",
+                                                    "ref_link": "dummylink"
+                                                },
+                                                {
+                                                    "id":3,
+                                                    "title":"trigonometry",
+                                                    "ref_link": "dummylink"
+                                                },
+                                                {
+                                                    "id":4,
+                                                    "title":"kitna padega",
+                                                    "ref_link": "dummylink"
+                                                }
+                                             ],
+                            "learning_videos":[
+                                                    {
+                                                        "id":1,
+                                                        "title":"calculus",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":2,
+                                                        "title":"co-ordinate",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":3,
+                                                        "title":"trigonometry",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":4,
+                                                        "title":"kitna padega",
+                                                        "ref_link": "dummylink"
+                                                    }
+                                              ]
+                        },
+                        {
+                            "id": 2,
+                            "sub_name": "Intermediate",
+                            "learning_notes":[
+                                                    {
+                                                        "id":1,
+                                                        "title":"calculus",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":2,
+                                                        "title":"co-ordinate",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":3,
+                                                        "title":"trigonometry",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":4,
+                                                        "title":"kitna padega",
+                                                        "ref_link": "dummylink"
+                                                    }
+                                                ],
+                            "learning_videos":[
+                                                    {
+                                                        "id":1,
+                                                        "title":"calculus",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":2,
+                                                        "title":"co-ordinate",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":3,
+                                                        "title":"trigonometry",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":4,
+                                                        "title":"kitna padega",
+                                                        "ref_link": "dummylink"
+                                                    }
+                                            ]
+                        },
+                        {
+                            "id": 3,
+                            "sub_name": "Advance",
+                            "learning_notes":[
+                                                    {
+                                                        "id":1,
+                                                        "title":"calculus",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":2,
+                                                        "title":"co-ordinate",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":3,
+                                                        "title":"trigonometry",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":4,
+                                                        "title":"kitna padega",
+                                                        "ref_link": "dummylink"
+                                                    }
+                                                ],
+                            "learning_videos":[
+                                                    {
+                                                        "id":1,
+                                                        "title":"calculus",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":2,
+                                                        "title":"co-ordinate",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":3,
+                                                        "title":"trigonometry",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":4,
+                                                        "title":"kitna padega",
+                                                        "ref_link": "dummylink"
+                                                    }
+                                            ]
+                        },
+                        {
+                            "id": 4,
+                            "sub_name": "Important Links",
+                            "learning_notes":[
+                                                    {
+                                                        "id":1,
+                                                        "title":"calculus",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":2,
+                                                        "title":"co-ordinate",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":3,
+                                                        "title":"trigonometry",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":4,
+                                                        "title":"kitna padega",
+                                                        "ref_link": "dummylink"
+                                                    }
+                                                ],
+                            "learning_videos":[
+                                                    {
+                                                        "id":1,
+                                                        "title":"calculus",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":2,
+                                                        "title":"co-ordinate",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":3,
+                                                        "title":"trigonometry",
+                                                        "ref_link": "dummylink"
+                                                    },
+                                                    {
+                                                        "id":4,
+                                                        "title":"kitna padega",
+                                                        "ref_link": "dummylink"
+                                                    }
+                                            ]
+                        }
+                    ]
+    },
+    {
+        "id": "CSE0102",
+        "name": "CSE First Year Spring Semester",
+        "year": 1,
+        "semester": "Spring",
         "subjects": [
                         {
                             "id":1,
@@ -198,8 +400,10 @@
                     ]
     },
     {
-        "id": 2,
-        "name": "First Year ECE",
+        "id": "CSE0203",
+        "name": "CSE Second Year Autumn Semester",
+        "year": 2,
+        "semester": "Autumn",
         "subjects": [
                         {
                             "id":1,
@@ -396,8 +600,10 @@
                     ]
     },
     {
-        "id": 3,
-        "name": "Second Year CSE",
+        "id": "CSE0204",
+        "name": "CSE Second Year Spring Semester",
+        "year": 2,
+        "semester": "Spring",
         "subjects": [
                         {
                             "id":1,
@@ -640,8 +846,10 @@
                     ]
     },
     {
-        "id": 4,
-        "name": "Second Year ECE",
+        "id": "CSE0305",
+        "name": "CSE Third Year Autumn Semester",
+        "year": 3,
+        "semester": "Autumn",
         "subjects": [
                         {
                             "id":1,
@@ -838,206 +1046,10 @@
                     ]
     },
     {
-        "id": 5,
-        "name": "Third Year CSE",
-        "subjects": [
-                        {
-                            "id":1,
-                            "sub_name": "Basics",
-                            "learning_notes":[
-                                                {
-                                                    "id":1,
-                                                    "title":"calculus",
-                                                    "ref_link": "dummylink"
-                                                },
-                                                {
-                                                    "id":2,
-                                                    "title":"co-ordinate",
-                                                    "ref_link": "dummylink"
-                                                },
-                                                {
-                                                    "id":3,
-                                                    "title":"trigonometry",
-                                                    "ref_link": "dummylink"
-                                                },
-                                                {
-                                                    "id":4,
-                                                    "title":"kitna padega",
-                                                    "ref_link": "dummylink"
-                                                }
-                                             ],
-                            "learning_videos":[
-                                                    {
-                                                        "id":1,
-                                                        "title":"calculus",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":2,
-                                                        "title":"co-ordinate",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":3,
-                                                        "title":"trigonometry",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":4,
-                                                        "title":"kitna padega",
-                                                        "ref_link": "dummylink"
-                                                    }
-                                              ]
-                        },
-                        {
-                            "id": 2,
-                            "sub_name": "Intermediate",
-                            "learning_notes":[
-                                                    {
-                                                        "id":1,
-                                                        "title":"calculus",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":2,
-                                                        "title":"co-ordinate",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":3,
-                                                        "title":"trigonometry",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":4,
-                                                        "title":"kitna padega",
-                                                        "ref_link": "dummylink"
-                                                    }
-                                                ],
-                            "learning_videos":[
-                                                    {
-                                                        "id":1,
-                                                        "title":"calculus",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":2,
-                                                        "title":"co-ordinate",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":3,
-                                                        "title":"trigonometry",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":4,
-                                                        "title":"kitna padega",
-                                                        "ref_link": "dummylink"
-                                                    }
-                                            ]
-                        },
-                        {
-                            "id": 3,
-                            "sub_name": "Advance",
-                            "learning_notes":[
-                                                    {
-                                                        "id":1,
-                                                        "title":"calculus",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":2,
-                                                        "title":"co-ordinate",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":3,
-                                                        "title":"trigonometry",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":4,
-                                                        "title":"kitna padega",
-                                                        "ref_link": "dummylink"
-                                                    }
-                                                ],
-                            "learning_videos":[
-                                                    {
-                                                        "id":1,
-                                                        "title":"calculus",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":2,
-                                                        "title":"co-ordinate",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":3,
-                                                        "title":"trigonometry",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":4,
-                                                        "title":"kitna padega",
-                                                        "ref_link": "dummylink"
-                                                    }
-                                            ]
-                        },
-                        {
-                            "id": 4,
-                            "sub_name": "Important Links",
-                            "learning_notes":[
-                                                    {
-                                                        "id":1,
-                                                        "title":"calculus",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":2,
-                                                        "title":"co-ordinate",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":3,
-                                                        "title":"trigonometry",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":4,
-                                                        "title":"kitna padega",
-                                                        "ref_link": "dummylink"
-                                                    }
-                                                ],
-                            "learning_videos":[
-                                                    {
-                                                        "id":1,
-                                                        "title":"calculus",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":2,
-                                                        "title":"co-ordinate",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":3,
-                                                        "title":"trigonometry",
-                                                        "ref_link": "dummylink"
-                                                    },
-                                                    {
-                                                        "id":4,
-                                                        "title":"kitna padega",
-                                                        "ref_link": "dummylink"
-                                                    }
-                                            ]
-                        }
-                    ]
-    },
-    {
-        "id": 6,
-        "name": "Third Year ECE",
+        "id": "CSE0306",
+        "name": "CSE Third Year Spring Semester",
+        "year": 3,
+        "semester": "Spring",
         "subjects": [
                         {
                             "id":1,
@@ -1144,8 +1156,10 @@
                     ]
     },
     {
-        "id": 7,
-        "name": "Fourth Year CSE",
+        "id": "CSE0407",
+        "name": "CSE Fourth Year Autumn Semester",
+        "year": 4,
+        "semester": "Autumn",
         "subjects": [
                         {
                             "id":1,
@@ -1342,8 +1356,10 @@
                     ]
     },
     {
-        "id": 8,
-        "name": "Fourth Year ECE",
+        "id": "CSE0408",
+        "name": "CSE Fourth Year Spring Semester",
+        "year": 4,
+        "semester": "Spring",
         "subjects": [
                         {
                             "id":1,

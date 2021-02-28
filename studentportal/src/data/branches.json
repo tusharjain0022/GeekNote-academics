@@ -2,49 +2,185 @@
     {
         "id": 1,
         "name": "First Year CSE",
-        "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
-        "link":"/first-year-cse"
+        "branch":"CSE",
+        "semester":[
+            { 
+                "id":"CSE0101",
+                "totalSub":6,
+                "name":"CSE First Year Autumn",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/cse/1/autumn"
+            },
+            {
+                "id":"CSE0102",
+                "totalSub":6,
+                "name":"CSE First Year Spring",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/cse/1/spring"
+            }
+        ]
     },
     {
         "id": 2,
         "name": "First Year ECE",
-        "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
-        "link":"/first-year-ece"
+        "branch":"ECE",
+        "semester":[
+            {
+                "id":"ECE0101",
+                "totalSub":6,
+                "name":"ECE First Year Autumn",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/ece/1/autumn"
+            },
+            {
+                "id":"ECE0102",
+                "totalSub":6,
+                "name":"ECE First Year Spring",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/ece/1/spring"
+            }
+        ]
     },
     {
         "id": 3,
         "name": "Second Year CSE",
-        "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
-        "link":"/second-year-cse"
+        "branch":"CSE",
+        "semester":[
+            {
+                "id":"CSE0203",
+                "totalSub":6,
+                "name":"CSE Second Year Autumn",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/cse/2/autumn"
+            },
+            {
+                "id":"CSE0204",
+                "totalSub":6,
+                "name":"CSE Second Year Spring",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/cse/2/spring"
+            }
+        ]
     },
     {
         "id": 4,
         "name": "Second Year ECE",
-        "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
-        "link":"/second-year-ece"
+        "branch":"ECE",
+        "semester":[
+            {
+                "id":"ECE0203",
+                "totalSub":6,
+                "name":"ECE Second Year Autumn",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/ece/2/autumn"
+            },
+            {
+                "id":"ECE0204",
+                "totalSub":6,
+                "name":"ECE Second Year Spring",
+                "timetable":"../../images/TimeTable/TTECE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/ece/2/spring"
+            }
+        ]
     },
     {
         "id": 5,
         "name": "Third Year CSE",
-        "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
-        "link":"/third-year-cse"
+        "branch":"CSE",
+        "semester":[
+            {
+                "id":"CSE0305",
+                "totalSub":6,
+                "name":"CSE Third Year Autumn",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/cse/3/autumn"
+            },
+            {
+                "id":"CSE0306",
+                "totalSub":6,
+                "name":"CSE Third Year Spring",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/cse/3/spring"
+            }
+        ]
     },
     {
         "id": 6,
         "name": "Third Year ECE",
-        "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
-        "link":"/third-year-ece"
+        "branch":"ECE",
+       "semester":[
+            {
+                "id":"ECE0305",
+                "totalSub":6,
+                "name":"ECE Third Year Autumn",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/ece/3/autumn"
+            },
+            {
+                "id":"ECE0306",
+                "totalSub":6,
+                "name":"ECE Third Year Spring",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/ece/3/spring"
+            }
+        ]
     },
     {
         "id": 7,
         "name": "Fourth Year CSE",
-        "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
-        "link":"/fourth-year-cse"
+        "branch":"CSE",
+       "semester":[
+            {
+                "id":"CSE0407",
+                "totalSub":6,
+                "name":"CSE Fourth Year Autumn",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/cse/4/autumn"
+            },
+            {
+                "id":"CSE0408",
+                "totalSub":6,
+                "name":"CSE Fourth Year Spring",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/cse/4/spring"
+            }
+        ]
     },
     {
         "id": 8,
        "name": "Fourth Year ECE",
-       "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
-        "link":"/fourth-year-ece"
+       "branch":"ECE",
+       "semester":[
+            {
+                "id":"ECE0407",
+                "totalSub":6,
+                "name":"CSE Fourth Year Autumn",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/ece/4/autumn"
+            },
+            {
+                "id":"ECE0408",
+                "totalSub":6,
+                "name":"CSE Fourth Year Spring",
+                "timetable":"../../images/TimeTable/TTCSE0204.jpg",
+                "intro":"Learn important subjects of Second Year Computer Science and Engineering course like Operating Systems, Data Structures, Graph Theory, Microprocessor and Interfacing,etc which will help you to learn and grow more.",
+                "link":"/ece/4/spring"
+            }
+        ]
     }
 ]
