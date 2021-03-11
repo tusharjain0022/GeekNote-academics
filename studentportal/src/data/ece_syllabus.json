@@ -604,6 +604,21 @@
           },
           {
             "id": 5,
+            "title": "Lecture 5",
+            "ref_link": "https://drive.google.com/file/d/103c9L31ciof35qDrdvS9NM3d7ZF0LD9R/view?usp=sharing"
+          },
+          {
+            "id": 6,
+            "title": "Lecture 6-7",
+            "ref_link": "https://drive.google.com/file/d/1YrEj9MWpdULNpu52lEtDrph5r97qFuvR/view?usp=sharing"
+          },
+          {
+            "id": 7,
+            "title": "Lecture 8-9",
+            "ref_link": "https://drive.google.com/file/d/1LzUIzD2MLlY_uco3jYKMq896bYcO6ANO/view?usp=sharing"
+          },
+          {
+            "id": 8,
             "title": "Lab Experiments",
             "ref_link": "https://drive.google.com/file/d/1X_dLNhiSscFTE2Ok95vqjeY-WcMcPjYX/view?usp=sharing"
           }
@@ -623,6 +638,11 @@
             "id": 3,
             "title": "Playlist 3 (GATE and ESE solved question papers)",
             "ref_link": "https://youtube.com/playlist?list=PLgzsL8klq6DJGWEC0IrWTdqTpBshHia7V"
+          },
+          {
+            "id": 4,
+            "title": "Lab Experiments",
+            "ref_link": "https://drive.google.com/file/d/1o2j-9JUVD5W_18-jwD3s5d9s34icM41q/view"
           }
         ]
       },

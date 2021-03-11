@@ -77,16 +77,6 @@ function Navbar_Top() {
                 GeekNote dev
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://geeknote-algorithm.netlify.app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GeekNote algo
-              </a>
-            </li>
           </ul>
           <div className=" button-group">
             <button
