@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/geeknote-academics", {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb://localhost:27017/geeknote-academics",{
+    useCreateIndex:true,
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+}).then(()=>{
+    console.log("database connection successfull");
+}).catch(()=>{
+    console.log("ERROR in database connection");
+})
