@@ -41,7 +41,7 @@ app.get("/",async(req,res)=>{
   }
 })
 
-app.post("/",async(req,res)=>{
+app.post("/insertBranch",async(req,res)=>{
   try{
       const branchData=new branche(req.body);
       const addData=await branchData.save();
