@@ -1,10 +1,6 @@
 const mongoose=require("mongoose");
 
 const subjectSchema=mongoose.Schema({
-    id:{
-        type:String,
-        required:true
-    },
     name:{
         type:String,
         required:true
@@ -17,18 +13,6 @@ const subjectSchema=mongoose.Schema({
         type:String,
         required:true,
     },
-    subjects:[
-        {
-            id:{
-                type:String,
-                required:true
-            },
-            name:{
-                type:String,
-                required:true
-            }
-        }
-    ],
     branch:{
         type:String,
         required:true,

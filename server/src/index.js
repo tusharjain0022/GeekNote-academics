@@ -74,16 +74,17 @@ app.get("/:branch/:year/:semester",async(req,res)=>{
   const obj={branch:branch,year:year,semester:semester};
   try{
       const getData=await subject.find(obj);
-      var result={
-          "subjects_name":[],
-          "subject_topics":{}
-      };
-      for(var i of getData[0].subjects) {
-          result.subjects_name.push(i.name);
+      var subject_names=[];
+      var topics={};
+      for(var i of getData) {
+          subject_names.push(i.name);
           const obj_2={branch:branch,year:year,semester:semester,subject:i.name};
           const getTopic=await individual_topic.find(obj_2);
-          result.subject_topics[i.name]=getTopic;
+          topics[i.name]=getTopic;
       }
+      var result={};
+      result.sub=subject_names;
+      result.top=topics;
       res.send(result);
   }catch(e){
       console.log("error during get request",e);
