@@ -4,6 +4,7 @@ import "./ChangeSubject.css";
 import { Button } from "react-bootstrap";
 import Axios from 'axios';
 import { Modal } from 'react-bootstrap';
+import axios from "axios";
 
 function MyVerticallyCenteredModal(props) {
 
@@ -69,11 +70,6 @@ function MyVerticallyCenteredModal(props) {
 }
 
 
-
-
-
-
-
 const CardSubject = (props) => {
 
   const [modalShow, setModalShow] = React.useState(false);
@@ -119,11 +115,61 @@ function ChangeSubject() {
     });
   },[]);
 
+  const [addSub,setSub]=useState({
+      name: '',
+      year: '',
+      semester: '',
+      branch: ''
+  })
+
+  const nullifyAddSub=()=>{
+    setSub({
+      name: '',
+      year: '',
+      semester: '',
+      branch: ''
+    })
+  }
+
+  const handleformchange=(e)=>{
+    const { name, value } = e.target;
+    setSub(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleAddSubject=(()=>{
+    axios.post(`http://localhost:3001/insertSubject`,addSub);
+    nullifyAddSub();
+    window.location.reload();
+  })
+
+
   return (
     <section className="changeSubject-section container">
+
+      <div className="add_sub_section">
+        <h1 style={{ display:'flex', justifyContent:'center', color:'greenyellow' }}>Add Subjects</h1>
+
+
+        <label style={{ color: 'yellow' }}>Name: </label>
+        <input type="text" onChange={handleformchange} value={addSub.name} name="name"></input><br />
+        <label style={{ color: 'yellow' }}>Year: </label>
+        <input type="text" onChange={handleformchange} value={addSub.year} name="year"></input><br />
+        <label style={{ color: 'yellow' }}>Semester: </label>
+        <input type="text" onChange={handleformchange} value={addSub.semester} name="semester"></input><br />
+        <label style={{ color: 'yellow' }}>Branch: </label>
+        <input type="text" onChange={handleformchange} value={addSub.branch} name="branch"></input><br />
+        <button onClick={handleAddSubject}> Add Subject  </button>
+
+      </div>
+
+
+
       <div className="row">
         <div className="col-12">
-          <h1 className="heading" style={{ display:'flex', justifyContent:'center' }}>
+          <h1 className="heading" style={{ display:'flex', justifyContent:'center', color:'greenyellow' }}>
             Modify and Update Subject's
           </h1>
           <hr

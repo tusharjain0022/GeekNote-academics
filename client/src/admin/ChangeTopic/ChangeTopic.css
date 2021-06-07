@@ -1,18 +1,18 @@
-.changeSubject-section {
+.changeTopic-section {
     margin-top: 40px;
     position: relative;
   }
-  .changeSubject-section .heading {
+  .changeTopic-section .heading {
     color: #ccd6f6;
     text-align: left;
     font-style: normal;
     font-weight: 400;
     font-size: 6vh;
   }
-  .changeSubject-section a {
+  .changeTopic-section a {
     text-decoration: none;
   }
-  .changeSubject-section .semesterButton {
+  .changeTopic-section .semesterButton {
     width: 100%;
     border-radius: 35px;
     background: #132743;
@@ -22,30 +22,30 @@
     display: inline-block;
     color: #fff;
   }
-  .changeSubject-section .semesterButton:hover {
+  .changeTopic-section .semesterButton:hover {
     color: #fff;
     border: 1px solid #fbbc04;
     box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.45);
   }
-  .changeSubject-section .semesterButton:active {
+  .changeTopic-section .semesterButton:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid #fbbc04;
     transform: translateY(1px);
   }
   @media (max-width: 500px) {
-    .changeSubject-section .heading {
+    .changeTopic-section .heading {
       text-align: center;
       font-size: 5.228373702422146vh;
     }
   }
   
   @media (max-width: 992px) {
-    .changeSubject-section .heading {
+    .changeTopic-section .heading {
       text-align: center;
     }
   }
   
-  .changeSubject-section .hline {
+  .changeTopic-section .hline {
     position: absolute;
     left: 43vh;
     top: 10px;
@@ -70,7 +70,7 @@
     grid-gap: 40px;
   }
   
-  .changeSubject-section .changeSubject-card {
+  .changeTopic-section .changeTopic-card {
     background-color: #293d5afc;
     color: #fff;
     font-weight: 400;
@@ -80,7 +80,7 @@
     border-radius: 10px;
   }
   
-  .changeSubject-card:hover {
+  .changeTopic-card:hover {
     -webkit-box-shadow: 0px 3px 20px #a0dcff;
     -moz-box-shadow: 0px 3px 20px #a0dcff;
     box-shadow: 0px 3px 20px #a0dcff;
@@ -113,7 +113,7 @@
       grid-template-columns: repeat(6, 1fr);
       grid-gap: 20px;
     }
-    .changeSubject-card {
+    .changeTopic-card {
       grid-column-end: span 12;
     }
   }
@@ -131,7 +131,7 @@
       grid-gap: 20px;
     }
   
-    .changeSubject-card {
+    .changeTopic-card {
       grid-column-end: span 6;
     }
   }
