@@ -1,0 +1,138 @@
+.changeSubject-section {
+    margin-top: 40px;
+    position: relative;
+  }
+  .changeSubject-section .heading {
+    color: #ccd6f6;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vh;
+  }
+  .changeSubject-section a {
+    text-decoration: none;
+  }
+  .changeSubject-section .semesterButton {
+    width: 100%;
+    border-radius: 35px;
+    background: #132743;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    padding: 5px 0px;
+    display: inline-block;
+    color: #fff;
+  }
+  .changeSubject-section .semesterButton:hover {
+    color: #fff;
+    border: 1px solid #fbbc04;
+    box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.45);
+  }
+  .changeSubject-section .semesterButton:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #fbbc04;
+    transform: translateY(1px);
+  }
+  @media (max-width: 500px) {
+    .changeSubject-section .heading {
+      text-align: center;
+      font-size: 5.228373702422146vh;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .changeSubject-section .heading {
+      text-align: center;
+    }
+  }
+  
+  .changeSubject-section .hline {
+    position: absolute;
+    left: 43vh;
+    top: 10px;
+    max-width: 50vw;
+    overflow: hidden;
+  }
+  .allcards {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+  }
+  
+  .cards {
+    float: left;
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+  }
+  
+  .changeSubject-section .changeSubject-card {
+    background-color: #293d5afc;
+    color: #fff;
+    font-weight: 400;
+    grid-column-end: span 3;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .changeSubject-card:hover {
+    -webkit-box-shadow: 0px 3px 20px #a0dcff;
+    -moz-box-shadow: 0px 3px 20px #a0dcff;
+    box-shadow: 0px 3px 20px #a0dcff;
+    border: solid 1.5px #fbbc04;
+  }
+  
+  .buttonSection{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .updateButton{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(138, 155, 211, 0.767);
+}
+
+.deleteButton{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(243, 24, 24, 0.767);
+}
+
+
+
+
+  @media (min-width: 500px) and (max-width: 962px) {
+    .cards {
+      grid-column: 2 / span 12;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+    }
+    .changeSubject-card {
+      grid-column-end: span 12;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .allcards {
+      grid-template-columns: 10px repeat(6, 1fr) 10px;
+      grid-gap: 10px;
+      padding-top: 0px;
+    }
+  
+    .cards {
+      grid-column: 2 / span 6;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+  
+    .changeSubject-card {
+      grid-column-end: span 6;
+    }
+  }
+  
