@@ -196,7 +196,7 @@ function ChangeTopic() {
           <input type="text" onChange={handleformchange} value={addTop.note} name="note"></input><br />
           <label style={{ color: 'yellow' }}>Video: </label>
           <input type="text" onChange={handleformchange} value={addTop.video} name="video"></input><br />
-          <button onClick={handleAddSubject}> Add Subject  </button>
+          <button onClick={handleAddSubject}> Add Topic  </button>
   
         </div>
   
@@ -205,7 +205,7 @@ function ChangeTopic() {
         <div className="row">
           <div className="col-12">
             <h1 className="heading" style={{ display:'flex', justifyContent:'center', color:'greenyellow' }}>
-              Modify and Update Subject's
+              Modify and Update Topic's
             </h1>
             <hr
               className="d-lg-none"
