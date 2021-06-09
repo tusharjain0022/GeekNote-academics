@@ -12,6 +12,8 @@ import Admin from "./components/Admin/Admin";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ChangeSubject from "./admin/ChangeSubject/ChangeSubject";
+import ChangeTopic from "./admin/ChangeTopic/ChangeTopic";
 
 function App() {
     return (
@@ -50,10 +52,11 @@ function App() {
                             )}
                         />
                         <ProtectedRoute exact path='/admin' component={Admin} />
-                        {/* <Route
+                        <Route
                             path='/changeSubject'
                             component={ChangeSubject}
-                        /> */}
+                        />
+                        <Route path='/changeTopic' component={ChangeTopic} />
                         <Route path='/' component={Error} />
                     </Switch>
                     <Footer />

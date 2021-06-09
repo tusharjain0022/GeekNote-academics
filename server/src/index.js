@@ -82,16 +82,6 @@ app.get("/:branch/:year/:semester", async (req, res) => {
     }
 });
 
-app.get("/changeSubject", async (req, res) => {
-    try {
-        const getData = await subject.find({});
-        res.send(getData);
-    } catch (e) {
-        console.log("error during get request", e);
-        res.send(e);
-    }
-});
-
 app.delete("/deleteSubjetc/:id", async (req, res) => {
     try {
         const deleteItem = await subject.findByIdAndDelete(req.params.id);
@@ -101,7 +91,7 @@ app.delete("/deleteSubjetc/:id", async (req, res) => {
         }
         res.send(deleteItem);
     } catch (e) {
-        console.log("ERROR during deleting post ");
+        console.log("ERROR during deleting subject ");
         res.status(500).send(e);
     }
 });
@@ -120,12 +110,55 @@ app.put("/updateSubject/:id", async (req, res) => {
         );
         res.send(result);
     } catch (e) {
-        console.log("ERROR during deleting post ");
+        console.log("ERROR during updating subject ");
         res.status(500).send(e);
     }
 });
 
-// inserting topics of subject
+//////////////////////
+app.get("/changeTopic", async (req, res) => {
+    try {
+        const getData = await individual_topic.find({});
+        res.send(getData);
+    } catch (e) {
+        console.log("error during get request", e);
+        res.send(e);
+    }
+});
+
+app.delete("/deleteTopic/:id", async (req, res) => {
+    try {
+        const deleteItem = await individual_topic.findByIdAndDelete(
+            req.params.id
+        );
+        if (!req.params.id) {
+            console.log("invalid id: ", req.params.id);
+            return res.status(400).send();
+        }
+        res.send(deleteItem);
+    } catch (e) {
+        console.log("ERROR during deleting Topic ");
+        res.status(500).send(e);
+    }
+});
+app.put("/updateTopic/:id", async (req, res) => {
+    try {
+        const result = await individual_topic.findByIdAndUpdate(
+            { _id: req.params.id },
+            {
+                $set: req.body,
+            },
+            {
+                new: true,
+                useFindAndMosdify: false,
+            }
+        );
+        res.send(result);
+    } catch (e) {
+        console.log("ERROR during Updating Topic ");
+        res.status(500).send(e);
+    }
+});
 app.post("/insertTopic", async (req, res) => {
     try {
         const addTopic = new individual_topic(req.body);
@@ -136,6 +169,7 @@ app.post("/insertTopic", async (req, res) => {
         res.send(e);
     }
 });
+//////////////////////
 
 app.listen(port, () => {
     console.log("Server is up and running on port :" + port);
