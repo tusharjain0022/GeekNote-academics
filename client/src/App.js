@@ -9,6 +9,7 @@ import Documentation from "./components/Documentation/Documentation";
 import branches from "./data/branches.json";
 import BranchSection from "./components/BranchSection/BranchSection";
 import ChangeSubject from "./admin/ChangeSubject/ChangeSubject"
+import ChangeTopic from "./admin/ChangeTopic/ChangeTopic"
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
               component={() => <Documentation name="Terms and Policy" />}
             />
             <Route path="/changeSubject" component={ChangeSubject} />
+            <Route path="/changeTopic" component={ChangeTopic} />
             <Route path="/" component={Error} />
           </Switch>
           <Footer />
