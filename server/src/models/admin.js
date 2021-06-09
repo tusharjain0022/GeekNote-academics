@@ -105,10 +105,10 @@ adminSchema.methods.generateAuthToken = async function () {
 adminSchema.statics.findByCredentials = async (email, password) => {
     const admin = await Admin.findOne({ email });
     if (!admin) {
-        throw new Error("Unable to Login !");
+        throw new Error("Incorrect email id or password !");
     }
     const isMatch = await bcrypt.compare(password, admin.password);
-    if (!isMatch) throw new Error("Unable to Login !");
+    if (!isMatch) throw new Error("Incorrect email id or password !");
     return admin;
 };
 

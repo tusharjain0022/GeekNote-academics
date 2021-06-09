@@ -2,3 +2,4 @@
 .idea
 .github
 node_modules
+.env

@@ -10,13 +10,13 @@ const auth = async (req, res, next) => {
             "tokens.token": token,
         });
         if (!admin) {
-            throw new Error();
+            throw new Error("Authentication failed! Login Again");
         }
         req.admin = admin;
         req.token = token;
         next();
     } catch (error) {
-        res.status(401).send({ error: "Please authenticate" });
+        res.status(401).send({ message: "Please authenticate" });
     }
 };
 

@@ -7,17 +7,21 @@ const auth = require("../middleware/auth");
 //Admin Registeration API
 router.post("/register", async (req, res) => {
     const admin = new Admin(req.body.admin);
-    const accessCode = req.body.accessCode;
+    const accessCode = req.body.inviteCode;
     try {
         const inviteLink = await InviteLink.findOne({ accessCode });
-        if (!inviteLink) throw new Error("invalid invite link!");
+        console.log(inviteLink, accessCode);
+        if (!inviteLink) throw new Error("Invalid invite link!");
         admin.adminType = inviteLink.adminType;
-        await inviteLink.remove();
         const token = await admin.generateAuthToken();
+        await inviteLink.remove();
         res.status(201).send({ admin, token });
     } catch (error) {
-        console.log(error);
-        res.status(500).send(error);
+        if (error.code === 11000)
+            res.status(500).send({
+                message: "Someone is already registered with this email!",
+            });
+        res.status(500).send({ message: error.message });
     }
 });
 
@@ -28,11 +32,10 @@ router.post("/login", async (req, res) => {
             req.body.email,
             req.body.password
         );
-
         const token = await admin.generateAuthToken();
         res.status(200).send({ admin, token });
     } catch (error) {
-        res.status(500).send({ error: "Unable to Login" });
+        res.status(500).send({ message: error.message });
     }
 });
 
@@ -45,7 +48,7 @@ router.post("/logout", auth, async (req, res) => {
         await req.admin.save();
         res.status(200).send("Logout Successfull");
     } catch (error) {
-        res.status(500).send(error);
+        res.status(500).send({ message: error.message });
     }
 });
 
@@ -56,7 +59,7 @@ router.post("/logoutAll", auth, async (req, res) => {
         await req.admin.save();
         res.status(200).send("Logout Succesfull from all sessions");
     } catch (error) {
-        res.status(500).send(error);
+        res.status(500).send({ message: error.message });
     }
 });
 
