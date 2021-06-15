@@ -1,9 +1,9 @@
 import "./InviteLink.css";
 
-function InviteLink({ admin }) {
+function InviteLink({ adminType }) {
 	return (
 		<div className='invite-component container'>
-			<h4>Invite Link for {admin.adminType} Admin </h4>
+			<h4>Invite Link for {adminType} Admin </h4>
 			<div className='row'>
 				<div className='col-12 col-lg-9'>
 					<input
