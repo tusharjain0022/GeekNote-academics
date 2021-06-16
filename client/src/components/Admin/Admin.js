@@ -1,6 +1,7 @@
 import "./Admin.css";
 import Profile from "./MyProfile/profile";
-import InviteLink from "./InviteLink/InviteLink";
+import IndividualInviteLink from "./IndividualInviteLink/IndividualInviteLink";
+import MultipleInviteLink from "./MultipleInviteLink/MultipleInviteLink";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -25,14 +26,23 @@ function Admin() {
 				setAdmin(res.data);
 			})
 			.catch((error) => console.log(error));
+		// console.log(admin)
 	}, [setAdmin, apiBaseURL, token]);
+
+	const InviteLink = () => {
+		if (admin.adminType === "All Year")
+			return <MultipleInviteLink adminType={admin.adminType} />;
+		else if (admin.adminType) return <IndividualInviteLink adminType={admin.adminType} />;
+		else return null;
+	};
+
 	return (
 		<div className='admin'>
 			<h4> Admin Section </h4>
 			<hr style={{ borderTop: "1px solid #c6e2ff", width: "70%" }}></hr>
 			<Profile admin={admin} />
 			<hr style={{ borderTop: "1px solid #c6e2ff", width: "70%" }}></hr>
-			<InviteLink admin={admin} />
+			<InviteLink />
 		</div>
 	);
 }

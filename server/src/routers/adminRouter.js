@@ -14,15 +14,18 @@ router.post("/register", async (req, res) => {
 			console.log(inviteLink, accessCode);
 			if (!inviteLink) throw new Error("Invalid invite link!");
 			admin.adminType = inviteLink.adminType;
+			const token = await admin.generateAuthToken();
+			await inviteLink.remove();
+			res.status(201).send({ admin, token });
 		} else if (admin.password !== process.env.PERM_ADMIN_PASSWORD)
 			throw new Error("Try another email id");
-		else admin.adminType = "All Year";
-		const token = await admin.generateAuthToken();
-		if (admin.email !== process.env.PERM_ADMIN_EMAIL) {
-			await inviteLink.remove();
+		else {
+			admin.adminType = "All Year";
+			const token = await admin.generateAuthToken();
+			res.status(201).send({ admin, token });
 		}
-		res.status(201).send({ admin, token });
 	} catch (error) {
+		console.log(error);
 		if (error.code === 11000)
 			res.status(500).send({
 				message: "Someone is already registered with this email!",
