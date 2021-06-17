@@ -78,7 +78,7 @@ router.get("/admins", async (req, res) => {
 		const admins = await Admin.find({});
 		res.status(200).send(admins);
 	} catch (error) {
-		res.status(500).send(error);
+		res.status(500).send({ message: error.message });
 	}
 });
 
@@ -118,7 +118,20 @@ router.delete("/admins/me", auth, async (req, res) => {
 		await req.admin.remove();
 		res.status(200).send(req.admin);
 	} catch (error) {
-		res.status(500).send(error);
+		res.status(500).send({ message: error.message });
+	}
+});
+
+// Delete : Delete Admin by Id
+router.delete("/admins", auth, async (req, res) => {
+	try {
+		if (req.admin.adminType !== "All Year") throw new Error("Access Denied !⛔");
+		const admin = await Admin.findByIdAndDelete(req.query.id);
+
+		res.status(200).send(admin);
+	} catch (error) {
+		console.log(error);
+		res.status(500).send({ message: error.message });
 	}
 });
 

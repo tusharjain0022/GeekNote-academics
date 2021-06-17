@@ -2,6 +2,7 @@ import "./Admin.css";
 import Profile from "./MyProfile/profile";
 import IndividualInviteLink from "./IndividualInviteLink/IndividualInviteLink";
 import MultipleInviteLink from "./MultipleInviteLink/MultipleInviteLink";
+import DeleteAll from "./DeleteAll/DeleteAll";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -31,7 +32,13 @@ function Admin() {
 
 	const InviteLink = () => {
 		if (admin.adminType === "All Year")
-			return <MultipleInviteLink adminType={admin.adminType} />;
+			return (
+				<>
+					<MultipleInviteLink adminType={admin.adminType} />
+					<hr style={{ borderTop: "1px solid #c6e2ff", width: "70%" }}></hr>
+					<DeleteAll adminID={admin._id} />
+				</>
+			);
 		else if (admin.adminType) return <IndividualInviteLink adminType={admin.adminType} />;
 		else return null;
 	};
