@@ -1,20 +1,22 @@
 .admin {
-    min-height: 100vh;
-    text-align: center;
-    padding: 70px 20px;
-    color: #c6e2ff;
-    font-family: "Chakra Petch", sans-serif;
+	min-height: 100vh;
+	/* text-align: center; */
+	padding: 70px 20px;
+	color: #c6e2ff;
+	font-family: "Chakra Petch", sans-serif;
 }
-
+.admin h4 {
+	text-align: center;
+}
 .admin h1 {
-    margin: 0;
-    letter-spacing: 30px;
+	margin: 0;
+	letter-spacing: 30px;
 }
 
 @media (max-width: 550px) {
-    .admin h1 {
-        font-size: 100px;
-        font-weight: 550;
-        letter-spacing: 10px;
-    }
+	.admin h1 {
+		font-size: 100px;
+		font-weight: 550;
+		letter-spacing: 10px;
+	}
 }
