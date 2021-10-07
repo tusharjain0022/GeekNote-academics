@@ -1,20 +1,31 @@
 import "./BranchSection.css";
+import Resources from "./Resources/Resources";
 import Landing from "./LandingSection/Landing";
 import Calendar from "./Calendar/Calendar";
 import Contributor from "./Contributor/Contributor";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function BranchSection(props) {
-  return (
-    <div className="branchsection">
-      <Landing
-        semesterID={props.semesterID}
-        name={props.name}
-        branch={props.branch}
-        intro={props.intro}
-      />
-      <Calendar timetable={props.timetable} />
-      <Contributor name={props.shortName} />
-    </div>
-  );
+	const [subjects, setSubjects] = useState([]);
+	const apiBaseURL = process.env.REACT_APP_GEEKNOTE_API || `http://localhost:3001`;
+
+	useEffect(() => {
+		axios
+			.get(`${apiBaseURL}${props.link}`)
+			.then((res) => {
+				console.log(res.data);
+				setSubjects(res.data);
+			})
+			.catch((error) => console.log(error));
+	}, [apiBaseURL, props.link]);
+	return (
+		<div className='branchsection'>
+			<Landing name={props.name} intro={props.intro} />
+			<Resources subjects={subjects} />
+			<Calendar timetable={props.timetable} />
+			<Contributor name={props.shortName} />
+		</div>
+	);
 }
 export default BranchSection;

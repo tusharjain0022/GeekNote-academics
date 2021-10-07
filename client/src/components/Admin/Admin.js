@@ -4,11 +4,14 @@ import IndividualInviteLink from "./IndividualInviteLink/IndividualInviteLink";
 import MultipleInviteLink from "./MultipleInviteLink/MultipleInviteLink";
 import DeleteAll from "./DeleteAll/DeleteAll";
 import { useEffect, useState } from "react";
+import Resources from "./Resources/Resources";
 import axios from "axios";
 
 function Admin() {
 	const [admin, setAdmin] = useState({});
 	const token = window.localStorage.getItem("token");
+	const [branch, setBranch] = useState("cse");
+	const [year, setYear] = useState(1);
 	const apiBaseURL = process.env.REACT_APP_GEEKNOTE_API || `http://localhost:3001`;
 
 	useEffect(() => {
@@ -25,6 +28,14 @@ function Admin() {
 			)
 			.then((res) => {
 				setAdmin(res.data);
+				const br = res.data.adminType.slice(-3, -1);
+				const yr = res.data.adminType.slice(0, 3);
+				if (br === "CS") setBranch("cse");
+				else setBranch("ece");
+				if (yr === "Fir") setYear(1);
+				else if (yr === "Sec") setYear(2);
+				else if (yr === "Thi") setYear(3);
+				else setYear(4);
 			})
 			.catch((error) => console.log(error));
 		// console.log(admin)
@@ -39,7 +50,18 @@ function Admin() {
 					<DeleteAll adminID={admin._id} />
 				</>
 			);
-		else if (admin.adminType) return <IndividualInviteLink adminType={admin.adminType} />;
+		else if (admin.adminType)
+			return (
+				<>
+					<IndividualInviteLink adminType={admin.adminType} />
+					<h4> Spring Semester</h4>
+					<hr style={{ borderTop: "1px solid #c6e2ff", width: "70%" }}></hr>
+					<Resources branch={branch} year={year} semester='spring' />
+					<h4> Autumn Semester </h4>
+					<hr style={{ borderTop: "1px solid #c6e2ff", width: "70%" }}></hr>
+					<Resources branch={branch} year={year} semester='autumn' />
+				</>
+			);
 		else return null;
 	};
 

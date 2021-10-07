@@ -30,7 +30,7 @@ function DeleteAll({ adminID }) {
 				//All other types of error if arises
 				else Notify(`Something went wrong ! ⚠`, "error");
 			});
-	}, []);
+	}, [adminID]);
 
 	//Handling Closing of Delete Confirmation Modal and Edit Admin Modal.
 	const handleClose = () => {
@@ -84,7 +84,6 @@ function DeleteAll({ adminID }) {
 					</div>
 				)}
 				{admins.map((admin, idx) => {
-					const id = admin._id;
 					return (
 						<div className='col-12 col-lg-6' key={idx}>
 							<hr style={{ borderTop: "1px solid #c6e2ff", width: "70%" }}></hr>
