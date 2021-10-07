@@ -25,7 +25,7 @@ const SubjectCard = (pr) => {
 				setLinks(res.data);
 			})
 			.catch((error) => console.log(error));
-	}, []);
+	}, [apiBaseURL, subjectID]);
 
 	function RotateArrow() {
 		if (arrow === down_arrow) setArrow(up_arrow);
@@ -68,7 +68,7 @@ const SubjectCard = (pr) => {
 												</li>
 											);
 										} else {
-											return;
+											return 0;
 										}
 									})}
 								</div>
@@ -88,7 +88,7 @@ const SubjectCard = (pr) => {
 											</li>
 										);
 									} else {
-										return;
+										return 0;
 									}
 								})}
 							</div>

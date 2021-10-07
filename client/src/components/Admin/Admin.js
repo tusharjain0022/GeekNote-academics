@@ -54,7 +54,11 @@ function Admin() {
 			return (
 				<>
 					<IndividualInviteLink adminType={admin.adminType} />
+					<h4> Spring Semester</h4>
+					<hr style={{ borderTop: "1px solid #c6e2ff", width: "70%" }}></hr>
 					<Resources branch={branch} year={year} semester='spring' />
+					<h4> Autumn Semester </h4>
+					<hr style={{ borderTop: "1px solid #c6e2ff", width: "70%" }}></hr>
 					<Resources branch={branch} year={year} semester='autumn' />
 				</>
 			);

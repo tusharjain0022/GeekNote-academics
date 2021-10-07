@@ -18,7 +18,7 @@ function BranchSection(props) {
 				setSubjects(res.data);
 			})
 			.catch((error) => console.log(error));
-	}, []);
+	}, [apiBaseURL, props.link]);
 	return (
 		<div className='branchsection'>
 			<Landing name={props.name} intro={props.intro} />

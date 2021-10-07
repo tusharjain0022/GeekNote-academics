@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Resources.css";
-import {
-	Accordion,
-	Card,
-	Button,
-	Modal,
-	ToggleButton,
-	ToggleButtonGroup,
-	ButtonGroup,
-} from "react-bootstrap";
+import { Accordion, Card, Button, Modal, ToggleButton, ButtonGroup } from "react-bootstrap";
 import { MDBTable, MDBTableBody, MDBTableHead } from "mdbreact";
-import pin from "./svg_img/pin.svg";
-import notes from "./svg_img/notes.svg";
-import speaker from "./svg_img/speaker.svg";
+// import pin from "./svg_img/pin.svg";
+// import notes from "./svg_img/notes.svg";
+// import speaker from "./svg_img/speaker.svg";
 import down_arrow from "./svg_img/down_arrow.svg";
 import del from "./svg_img/delete.svg";
 import edi from "./svg_img/edit-fill.svg";
@@ -33,7 +25,7 @@ const SubjectCard = (pr) => {
 				setLinks(res.data);
 			})
 			.catch((error) => console.log(error));
-	}, []);
+	}, [apiBaseURL, subjectID]);
 
 	function RotateArrow() {
 		if (arrow === down_arrow) setArrow(up_arrow);
@@ -303,6 +295,7 @@ const SubjectCard = (pr) => {
 																</td>
 															</tr>
 														);
+													else return <div></div>;
 												})}
 											</MDBTableBody>
 										</MDBTable>
