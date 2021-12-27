@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/geeknote-academics",{
+const uri = process.env.URI || "mongodb://localhost:27017/geeknote-academics"
+
+mongoose.connect(uri,{
     useCreateIndex:true,
     useNewUrlParser:true,
     useUnifiedTopology:true
